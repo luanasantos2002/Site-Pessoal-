@@ -1,0 +1,141 @@
+# site-pessoal
+<!DOCTYP html>
+<html lang= "pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport"content="width=device-width,initial-scale=0.1">
+     <title>Meu Portfólio Pessoal</title>
+     <style>
+        /* Configurações Gerais*/
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'segoe UI', Tahoma, Geneva, Verdana, sans-srif;
+         }
+         body{
+            background-color: #f4f4f9;
+            color: #333
+            line-height: 1.6;
+         }
+         /* Cabeçalho e Navegação*/
+         header{
+            background: #2c3e50;
+            color: write;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+         }
+         nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-wigth: 1000px;
+            margin: auto;
+         }
+         nav a {
+            color: white;
+            text-decoration: none;
+            font-weigth: bold;
+            transition: 0.3s;
+         }
+         nav a: hover {
+            color: #3498db;
+         }
+         /* Seção Hero(início)*/
+         #home{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient (rgba(0,0,0,0.6),
+rgba(0,0,0,0.6)),url ('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: white;
+         }
+         #home h1 { font-size: 3rem;margin-bottom: 1rem; }
+         #home p { font-size: 1.2rem;}
+         /Conteúdo das Seções/
+         section{ 
+            padding: 80px 20px;
+            max-width: 90px;
+            margin:auto;
+         }
+         h2{
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            left:50%;
+            transform: translateX(-50%);
+            position: relative;
+         }
+         .card{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+         }
+         /* Rodapé*/
+         footer{
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+         }
+         /* Responsividade*/
+         @media (max-width:600px){
+            #home h1 { front-size: 2rem;}
+            nav { flex-direction: column;}
+         }
+         </style>
+     </head>
+     <body>
+         <header>
+            <nav>
+               <div class= "logo" >menu nome</ div>
+               <div class= "links" >
+                <a
+     href= "#home" > Início </a>
+                <a
+     href= "#sobre" > Sobre</a>
+                <a
+     href= "#projetos" > Projetos</a>
+                <a
+     href= "#contato" > Contato</a>
+                </div>
+             </nav>
+         </header>
+         <section id= "home">
+             < h1> Olá, eu sou a Luana</h1>
+             <p>Desenvolvedor | Criativo | Entusiasta de Tecnologia </p>
+             <section id= "sobre">
+                   <h2> Sobre mim </h2>
+             <p>Sou estudante de Análise e Desenvolvimento de Sistemas e estou no primeiro semestre. Trabalhei como caixa em algumas empresas, como jovem aprendiz de um supermercado e atualmente trabalho como atendente de tele markting. Antes de decidir entrar nessa área, fiz um curso de programação, foi onde eu decidi que iria começar a faculdade de ADS.</p>
+                 </section>
+                 <section id= "projetos">
+                      <h2> Meus Projetos </h2>
+                      <div class= "project-grid">
+                         <div class= "card">
+                           <h3>Projeto 01</h3>
+                           <p>Esse é o meu primeiro projeto.  A intenção é me apresentar como estudante de Análise e Desenvolvimento de Sistemas. Tive o auxílio de uma Inteligencia Artifical para conseguir realizar esse site. </p>
+                           </div7>
+                         </section>
+                 < section id= "contato">
+                      <h2>Contato</h2>
+                      <p style= "text-align:center; "> Gostou do meu trabalho ? Vamos conversar! </p>
+                      <p style="text-align: center; margin-top: 10px;">
+                          <strong>Email: </strong> luanalivia35@gmail.com<br>
+                          <strong>Linkedin: </ strong>linkedin.com/in/luana-lívia
+                          </p>
+                      </section>
+                      <footer>
+                          <p>&copy;2026-Criado por Luana Livia</p>
+                      </body>
+                      </html>
