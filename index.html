@@ -1,146 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-     <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width,initial-scale=1.0">
-          <style>
-               /*Configurações Gerais*/
-               {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box:
-                    font-family: 'Sogoe UI', Tahoma, Geneva, Verdana, sans-sarif;
-               }
-               body {
-                    background-color: #f4f4f9;
-                    color: #333;
-                    line-height: 1.6;
-               }
-               /* Cabeçalho e Navegação */
-               header{
-                    background: #2c3e50;
-                    color: Black;
-                    padding: 1rem 0;
-                    position: fixed;
-                    width: 100%;
-                    top: 0;
-                    z-index: 1000;
-               }
-               nav{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    max-width: 1000px;
-                    margin: auto;
-               }
-               nav a {
-                    color: black;
-                    text-decoration: none;
-                    font-weight: bold;
-                    transition: 0.3s;
-                    margin: 0 10px;
-               }
-               nav a: houver{
-                    color: #3498db;
-               }
-               /* Seção Hero*/
-               #home {
-                    height: 100vh;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    aling-items: center;
-                    text-align: center;
-                    background: linear-gradient (rgba (0,0,0,0.6),rgba (0,0,0,0.6) ), 
-                         url ('https://hotmart.s3.amazonaws.com/product_pictures/d26efcb9-f138-4580-a50d-fb7a040273bd/Logotipoempresadeprogramaosistemasetecnologia.jpg')
-                    background-size: cover;
-                    background-position: center;
-                    color: white;
-                    padding: 20px;
-               }
-               #home h1 {font-size: 3rem;margin-bottom: 1rem;}
-               #home p { front-size: 1.2 rem;}
-               /*Conteúdo das Seções*/
-               section{
-                    padding: 100px 20px
-                    max-width: 1000px;
-                    margin: auto;
-               }
-               h2 {
-                    text-align: center;
-                    margin-bottom: 2rem;
-                    color: #2c3e50;
-                    border-bottom: 2px solid #3498db;
-                    display: block;
-                    width: fit-content;
-                    margin-left: auto;
-                    margin-right: auto;
-               }
-               .card {
-                    background: Black;
-                    padding: 20px;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-                    margin-top: 20px;
-               }
-               /* Rodapé*/
-               footer {
-                    background: #2c3e50;
-                    color: black;
-                    text-align: center;
-                    padding: 2rem;
-                    margin-top: 2rem;
-               }
-               /* Responsividade*/
-               @media (max-width: 600px){
-                    #home h1 { font-size: 2rem;}
-                    nav { flex-direction: column; gap: 10px;}
-               }
-          </style>
-     </head>
-     <body>
-          <hearder>
-               <nav>
-                    <div class="logo"><strong>Luana Lívia</strong></div>
-                    <div class="links">
-                         <a
-                              href="#home">Início</a>
-                         <a
-                              href="#sobre">Sobre</a>
-                         <a
-                              href="#projetos">Projetos</a>
-                         <a
-                              href="#contato">Contato</a>
-                    </div>
-               </nav>
-          </hearder>
-          <div id="home">
-               <h1>Olá, eu sou Luana</h1>
-               <p> Desenvolvedora|Criativa|Entusiasta de Tecnologia</p>
-               <section id="sobre">
-                    <h2>Sobre mim</h2>
-                    <p>Sou estudante de Análise e Desenvolvimento de Sistemas e estou no primeiro semestre. Trabalhei como caixa em uma loja de roupa, como atendente em uma sorveteria, aprendiz em um super mercado e atualmente estou trabalhando como atendente de call cente. Antes de decidir entrar nessa área, fiz um curso de programação, foi onde decidi que iria começar a fazer uma faculdade de ADS</p> 
-               </section>
-               <section id="projetos">
-                    <h2> Meus Projetos</h2>
-                    <div class="project-grid">
-                         <div class="card">
-                              <h3>Projeto 01</h3>
-                              <p> Esse é o meu primeiro projeto. A intenção é me apresentar como estudante de Ánalise e Desenvolvimento de Sistemas. Tive o auxílio de um Inteligencia Artificial para conseguir realizar esse site</p>
-                    </div>
-          </div>    
-               </section> 
-               <section id="contato">
-                    <h2>Contato</h2>
-                    <p
-                         style="text-align:center;">Gostou do meu trabalho?Vamos conversar! </p>
-                    <p
-                         style="text-align:center; margin-top: 10px;</p>
-                         <strong>Linkedin:</strong></linkedin.com/in/luana-lívia
-                         </p>
-               </section>
-                         <footer>
-                         <p> &copy; 2026-Criado por Luana Livia</p>
-                         </footer>
-     </body>
-                         </html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Hero */
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://hotmart.s3.amazonaws.com/product_pictures/d26efcb9-f138-4580-a50d-fb7a040273bd/Logotipoempresadeprogramaosistemasetecnologia.jpg');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#home h1 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <div><strong>Luana Lívia</strong></div>
+    <div>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </div>
+</nav>
+</header>
+
+<div id="home">
+    <h1>Olá, eu sou Luana</h1>
+    <p>Desenvolvedora | Criativa | Entusiasta de Tecnologia</p>
+</div>
+
+<section id="sobre">
+<h2>Sobre mim</h2>
+<p>
+Sou estudante de Análise e Desenvolvimento de Sistemas e estou no primeiro semestre...
+</p>
+</section>
+
+<section id="projetos">
+<h2>Meus Projetos</h2>
+<div class="card">
+    <h3>Projeto 01</h3>
+    <p>Esse é o meu primeiro projeto...</p>
+</div>
+</section>
+
+<section id="contato">
+<h2>Contato</h2>
+<p style="text-align:center;">Gostou do meu trabalho? Vamos conversar!</p>
+<p style="text-align:center;">
+<strong>LinkedIn:</strong>
+<a href="https://linkedin.com/in/luana-livia" target="_blank">Meu perfil</a>
+</p>
+</section>
+
+<footer>
+<p>&copy; 2026 - Criado por Luana Lívia</p>
+</footer>
+
+</body>
+</html>
